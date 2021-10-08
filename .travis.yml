@@ -3,12 +3,14 @@ language: r
 r: bioc-release
 sudo: TRUE
 
-os: macos
+os:
+  - linux
+  - osx
 
 
 repos:
   CRAN: https://cloud.r-project.org
-  #ropensci: http://packages.ropensci.org
+  ropensci: http://packages.ropensci.org
 
 
 notifications:
