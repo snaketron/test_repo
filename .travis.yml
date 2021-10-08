@@ -4,8 +4,9 @@ r: bioc-release
 sudo: TRUE
 
 os:
-  - linux
+  #- linux
   - osx
+  osimage: xcode12.5
 
 
 repos:
