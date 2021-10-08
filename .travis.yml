@@ -8,7 +8,7 @@ os: macos
 
 repos:
   CRAN: https://cloud.r-project.org
-  ropensci: http://packages.ropensci.org
+  #ropensci: http://packages.ropensci.org
 
 
 notifications:
