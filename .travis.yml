@@ -3,10 +3,8 @@ language: r
 r: bioc-release
 sudo: TRUE
 
-os:
-  #- linux
-  - osx
-  osx_image: xcode12.5
+os: osx
+osx_image: xcode12.5
 
 
 repos:
