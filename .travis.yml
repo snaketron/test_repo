@@ -6,7 +6,7 @@ sudo: TRUE
 os:
   #- linux
   - osx
-  osimage: xcode12.5
+  osx_image: xcode12.5
 
 
 repos:
