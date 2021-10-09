@@ -44,6 +44,6 @@ before_install:
 
 
 
-#after_success:
-#  - travis_wait 40 Rscript -e 'covr::codecov()'
+after_success:
+  - travis_wait 40 Rscript -e 'covr::codecov()'
 
