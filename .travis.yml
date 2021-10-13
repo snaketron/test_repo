@@ -23,13 +23,13 @@ cache:
 warnings_are_errors: FALSE
 
 r_build_args: 
-  - '--no-resave-data'
+  - '--keep-empty-dirs'
   - '--no-resave-data'
 #r_check_args: '--ignore-vignettes'
 
 
 script:
-  - travis_wait 40 R CMD build IgGeneUsage
+  - travis_wait 40 R CMD build
   # - travis_wait 40 R CMD build
   # - R CMD check *tar.gz
 
