@@ -183,8 +183,8 @@ viz$gene_usage_pct <- viz$gene_usage_count/viz$total*100
 # Hint: In real analyses you should use the complete set of genes
 top <- aggregate(gene_usage_pct~gene_name, data = viz, FUN = mean)
 top <- top[order(top$gene_usage_pct, decreasing = TRUE), ]
-IGHV_HCV <- IGHV_HCV[IGHV_HCV$gene_name %in% top$gene_name[seq_len(30)], ]
-viz <- viz[viz$gene_name %in% top$gene_name[seq_len(30)], ]
+IGHV_HCV <- IGHV_HCV[IGHV_HCV$gene_name %in% top$gene_name[seq_len(10)], ]
+viz <- viz[viz$gene_name %in% top$gene_name[seq_len(10)], ]
 
 # visualize
 ggplot(data = viz)+
